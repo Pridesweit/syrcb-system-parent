@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sz.admin.loancontact.mapper.LoanContactMapper">
+    <!-- 通用映射 -->
+    <resultMap id="BaseResultMap" type="com.sz.admin.loancontact.pojo.po.LoanContact">
+        <id column="id" property="id"/>
+        <result column="signing_institution" property="signingInstitution"/>
+        <result column="customer_type" property="customerType"/>
+        <result column="customer_name" property="customerName"/>
+        <result column="id_number" property="idNumber"/>
+        <result column="customer_number" property="customerNumber"/>
+        <result column="business_type" property="businessType"/>
+        <result column="contract_id" property="contractId"/>
+        <result column="contract_type" property="contractType"/>
+        <result column="contract_amount" property="contractAmount"/>
+        <result column="used_quota" property="usedQuota"/>
+        <result column="available_quota" property="availableQuota"/>
+        <result column="contract_start_date" property="contractStartDate"/>
+        <result column="contract_end_date" property="contractEndDate"/>
+        <result column="signed_date" property="signedDate"/>
+        <result column="termination_date" property="terminationDate"/>
+        <result column="repayment_cycle" property="repaymentCycle"/>
+        <result column="repayment_method" property="repaymentMethod"/>
+        <result column="signed_rate" property="signedRate"/>
+        <result column="guarantee_method" property="guaranteeMethod"/>
+        <result column="guarantee_contract_id" property="guaranteeContractId"/>
+        <result column="encumbrance_certificate_number" property="encumbranceCertificateNumber"/>
+        <result column="loan_purpose" property="loanPurpose"/>
+        <result column="customer_manager" property="customerManager"/>
+        <result column="credit_business_id" property="creditBusinessId"/>
+        <result column="contract_status" property="contractStatus"/>
+        <result column="loan_video_path" property="loanVideoPath"/>
+        <result column="tel_recording_path" property="telRecordingPath"/>
+        <result column="loan_data_path" property="loanDataPath"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, signing_institution, customer_type, customer_name, id_number, customer_number, business_type, contract_id, contract_type, contract_amount, used_quota, available_quota, contract_start_date, contract_end_date, signed_date, termination_date, repayment_cycle, repayment_method, signed_rate, guarantee_method, guarantee_contract_id, encumbrance_certificate_number, loan_purpose, customer_manager, credit_business_id, contract_status, loan_video_path, tel_recording_path, loan_data_path
+    </sql>
+
+</mapper>
